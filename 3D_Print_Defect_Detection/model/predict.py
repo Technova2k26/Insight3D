@@ -142,7 +142,7 @@ class DefectPredictor:
         self,
         original_img: np.ndarray,
         binary_mask: np.ndarray,
-        color: Tuple[int, int, int] = (0, 0, 255),
+        color: Tuple[int, int, int] = (32, 0, 128),
         alpha: float = 0.5
     ) -> np.ndarray:
         """Blend predicted defect binary mask onto original CT image."""
@@ -156,14 +156,14 @@ class DefectPredictor:
         else:
             base_bgr = base.copy()
 
-        color_mask = np.zeros_like(base_bgr)
-        color_mask[binary_mask == 1] = color
-
         overlay = base_bgr.copy()
-        mask_indices = binary_mask == 1
-        overlay[mask_indices] = cv2.addWeighted(
-            base_bgr[mask_indices], 1.0 - alpha, color_mask[mask_indices], alpha, 0
-        )
+        mask_indices = (binary_mask == 1) | (binary_mask == 255)
+
+        if np.any(mask_indices):
+            color_arr = np.array(color, dtype=np.float32)
+            blended = (base_bgr[mask_indices].astype(np.float32) * (1.0 - alpha) + color_arr * alpha).astype(np.uint8)
+            overlay[mask_indices] = blended
+
         return overlay
 
     def process_and_save(
