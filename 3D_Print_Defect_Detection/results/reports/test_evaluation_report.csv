@@ -1,0 +1,2 @@
+dataset_split,sample_count,test_dice_coef,test_iou_score,test_precision,test_recall,test_bce_dice_loss
+test,63,0.0911,0.0477,0.0538,0.2953,1.1029

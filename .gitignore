@@ -1,0 +1,29 @@
+# Model weights (large files)
+*.pth
+*.pt
+*.h5
+*.onnx
+models/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Scratch scripts
+*/scratch/
+scratch/

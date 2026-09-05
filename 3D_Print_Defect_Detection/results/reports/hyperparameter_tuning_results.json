@@ -1,0 +1,62 @@
+[
+    {
+        "trial_id": 1,
+        "learning_rate": 0.0001,
+        "init_filters": 16,
+        "batch_size": 8,
+        "dropout_rate": 0.1,
+        "val_loss": 1.3812,
+        "val_dice": 0.0827,
+        "val_iou": 0.0431,
+        "val_precision": 0.0446,
+        "val_recall": 0.561
+    },
+    {
+        "trial_id": 2,
+        "learning_rate": 0.0005,
+        "init_filters": 32,
+        "batch_size": 8,
+        "dropout_rate": 0.1,
+        "val_loss": 1.1994,
+        "val_dice": 0.1021,
+        "val_iou": 0.0538,
+        "val_precision": 0.0571,
+        "val_recall": 0.4825
+    },
+    {
+        "trial_id": 3,
+        "learning_rate": 0.001,
+        "init_filters": 32,
+        "batch_size": 16,
+        "dropout_rate": 0.1,
+        "val_loss": 1.1115,
+        "val_dice": 0.1167,
+        "val_iou": 0.062,
+        "val_precision": 0.0677,
+        "val_recall": 0.4229
+    },
+    {
+        "trial_id": 4,
+        "learning_rate": 0.0005,
+        "init_filters": 64,
+        "batch_size": 16,
+        "dropout_rate": 0.2,
+        "val_loss": 1.0518,
+        "val_dice": 0.138,
+        "val_iou": 0.0741,
+        "val_precision": 0.083,
+        "val_recall": 0.4087
+    },
+    {
+        "trial_id": 5,
+        "learning_rate": 0.0001,
+        "init_filters": 32,
+        "batch_size": 8,
+        "dropout_rate": 0.1,
+        "val_loss": 1.4768,
+        "val_dice": 0.0779,
+        "val_iou": 0.0405,
+        "val_precision": 0.0422,
+        "val_recall": 0.5031
+    }
+]

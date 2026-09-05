@@ -1,0 +1,9 @@
+{
+    "dataset_split": "test",
+    "sample_count": 63,
+    "test_dice_coef": 0.0911,
+    "test_iou_score": 0.0477,
+    "test_precision": 0.0538,
+    "test_recall": 0.2953,
+    "test_bce_dice_loss": 1.1029
+}

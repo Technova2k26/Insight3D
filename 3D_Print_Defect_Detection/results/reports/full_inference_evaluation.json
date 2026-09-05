@@ -1,0 +1,12 @@
+{
+    "Test Split Size": "63 CT Slices",
+    "Pixel Binary Accuracy": "97.38%",
+    "Recall (Sensitivity)": "15.33%",
+    "Precision (PPV)": "53.23%",
+    "Dice Coefficient (F1-Score)": "0.2315",
+    "IoU Score (Jaccard Index)": "0.1327",
+    "Average Inference Latency": "561.51 ms per CT slice",
+    "Throughput": "1.8 FPS",
+    "Mean Defect Count Error": "\u00b110.10 defects per slice",
+    "Mean Defect Ratio % Error": "\u00b10.60%"
+}

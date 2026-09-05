@@ -1,0 +1,6 @@
+InSight3D Inspection Report
+Component ID: VERIFY-999
+Timestamp: 2026-09-05 16:06:11
+Defect Count: 2
+Defect %: 1.28%
+Status: FAIL

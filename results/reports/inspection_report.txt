@@ -1,0 +1,6 @@
+InSight3D Inspection Report
+Component ID: COMP-3D-ELEX-901
+Timestamp: 2026-09-05 19:08:02
+Defect Count: 76
+Defect %: 4.59%
+Status: FAIL
